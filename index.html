@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lista de Tareas</title>
+</head>
+<body>
+	<h1>to-do list</h1>
+	<section class="contenido-principal">
+
+			<form class="formulario" action="" id="agregar-tarea" onsubmit="return validacion();">
+				<div class="principal">
+					<input type="text" id="tareaInput" placeholder="Agrega tu tarea">
+					<div id="error"></div>
+					<input type="submit" class="boton" id="btn-agregar" value="Agregar Tarea" onclick="addElement()"> 
+
+				</div>	
+			</form>
+	<div class="tareas" id="lista">
+			<ul class="lista" >
+			</ul>
+	</div>
+	</section>
+	<script src="js/tareas.js"></script>
+</body>
+</html>
